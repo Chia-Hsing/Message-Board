@@ -10,7 +10,7 @@
     <title>Chia's Ｍessage Board</title>
 
     <!-- css -->
-    <link href="../css/main_page1.css" rel="stylesheet">
+    <link href="./css/main_page1.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"></link>
 
     <!-- Jquery -->
