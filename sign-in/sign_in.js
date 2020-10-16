@@ -9,10 +9,10 @@ $(function () {
                 url: './sign_in_handle.php',
                 data: { currentUsername: currentUsername, currentPassword: currentPassword },
                 dataType: 'JSON',
-                success: (res) => {
+                success: res => {
                     if (res.success === 'sign_in_OK') {
                         showInfo('Sign in success!')
-                        document.location.href = '../main-page/main_page.php'
+                        document.location.href = '../index.php'
                     } else if (res.success === 'sign_in_ERROR') {
                         showInfo('Incorrect username or password.')
                     }

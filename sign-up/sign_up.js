@@ -15,10 +15,10 @@ $(function () {
                     currentPassword: currentPassword,
                     confirm_password: confirm_password,
                 },
-                success: (res) => {
+                success: res => {
                     if (res.success === 'create_account_OK') {
                         showInfo('Sign up success!')
-                        document.location.href = '../main-page/main_page.php'
+                        document.location.href = '../index.php'
                     } else if (res.success === 'psw_confirm_ERROR') {
                         showInfo("Passwords didn't match. Try again!")
                     } else if (res.success === 'same_username_ERROR') {
