@@ -22,7 +22,7 @@
     
     <?php
 
-    require_once("../api/conn.php");
+    require_once("./api/conn.php");
 
     $session_id = session_id();
 

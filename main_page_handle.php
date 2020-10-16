@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once("../api/conn.php");
+    require_once("./api/conn.php");
 
     $username = $_POST["username"];
     $content = $_POST["content"];
