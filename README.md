@@ -9,6 +9,9 @@ Message Board, which is a good project to practice programming with PHP and JS. 
 + Implement the **add, edit and delete** features.
 + Complete **login and registration system** with PHP.
 
+# Live Demo
+[Message-Board](https://chia-mb.herokuapp.com/sign-in/sign_in.php)
+
 
 # App Display
 
