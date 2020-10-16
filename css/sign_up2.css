@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    font-family: 'Comic Neue', cursive;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(-70deg, #a0b2b7 45%, #3e6c88 45%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgb(1, 8, 36);
+    backdrop-filter: url(commonfilters.svg#filter);
+}
+
+.sign_up .form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: #284d57;
+}
+
+.sign_up .form h2 {
+    font-size: 1.6em;
+    margin: 10px 0 0;
+    position: relative;
+}
+
+.sign_up .form h2::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0px;
+    bottom: -10px;
+    background-color: #284d57;
+}
+
+.form input {
+    width: 100%;
+    border: 1px solid #aaa;
+    line-height: 2;
+    border-radius: 5px;
+}
+
+.form label {
+    line-height: 2;
+}
+
+.form .group div:first-child ~ div {
+    margin-top: 10px;
+}
+
+.form .group {
+    margin: 20px 0;
+}
+
+.form .btn-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .btn-group .sign_up_btn {
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    font-size: 1.5em;
+    border: #424f52;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background: #424f52;
+    color: #ffffff;
+    box-shadow: 3px 3px 4px 1px #3a3e40;
+    outline: none;
+}
+
+.form .btn-group a {
+    color: #f1a048;
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+}
+
+.form .btn-group a::after {
+    content: '';
+    height: 8px;
+    width: 120px;
+    position: absolute;
+    background-color: #f1a048;
+    opacity: 0.3;
+    left: 140px;
+    bottom: -1px;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.form .btn-group a:hover::after {
+    content: '';
+    height: 1px;
+    width: 120px;
+    position: absolute;
+    background-color: #f1a048;
+    opacity: 0.3;
+    left: 140px;
+    bottom: -1px;
+    z-index: -1;
+}
+
+.form .btn-group a:visited {
+    color: #f1a048;
+}
+
+.form .btn-group a:hover {
+    color: #424f52;
+}
+
+.sign_up_info {
+    color: #3e6c88;
+    font-size: 1.1em;
+    display: block;
+    height: 1px;
+    margin-top: 5px;
+}

@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Sarabun', sans-serif;
+}
+
+body {
+    background: linear-gradient(70deg, #a0b2b7 55%, #3e6c88 55%);
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+/* =============== MAIN MESSAGE SUBMIT ======================= */
+
+.wrap {
+    width: 700px;
+    margin: 20px auto;
+}
+
+.wrap .title {
+    width: 100%;
+    background-color: #e4e6db;
+    border-radius: 10px;
+    padding: 10px 5px 5px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 4px 4px 8px 2px #1c1f21;
+}
+
+.wrap .title h1 {
+    font-size: 2.4em;
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #354852;
+}
+
+.wrap .submit_message_wrap {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.wrap .submit_message_wrap .container {
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: url(commonfilters.svg#filter);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px 2px #1c1f21;
+}
+
+.wrap .submit_message_wrap .container .name {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    height: 30px;
+}
+
+.wrap .submit_message_wrap .container .name .username {
+    width: 80px;
+    color: #fff;
+    font-weight: 600;
+    background-color: hsla(360, 40%, 50%, 0.8);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.wrap .body {
+    width: 650px;
+    margin: 10px;
+}
+
+.commentArea {
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    border: 1px solid #3e4b72;
+}
+
+.wrap .submit {
+    float: right;
+    width: 80px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+/* =============== MAIN MESSAGE SHOW ======================= */
+
+.wrap .message_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: url(commonfilters.svg#filter);
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 2px #1c1f21;
+}
+
+.wrap .message_wrap .container1 {
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.wrap .message_wrap .container1 .name1 {
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+.wrap .message_wrap .container1 .name1 .username {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgb(245, 134, 82);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.wrap .message_wrap .container1 .body {
+    border-top: 1px solid #3e4b72;
+    padding-top: 20px;
+}
+
+.wrap .message_wrap .container1 .body .content {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.wrap .message_wrap .container1 .body .time {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    color: rgb(53, 54, 58);
+}
+
+/* =============== SUB MESSAGE SUBMIT ======================= */
+
+.wrap .message_wrap .sub_container,
+.wrap .message_wrap .sub_container1 {
+    width: 70%;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.wrap .message_wrap .sub_container {
+    display: none;
+    padding: 10px 0;
+}
+
+.wrap .message_wrap .sub_container1 {
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #3e4b72;
+    padding: 10px 20px;
+}
+
+.wrap .message_wrap .sub_container1 .sub_body .content {
+    width: 100%;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.wrap .message_wrap .sub_name {
+    margin: 10px 0 20px;
+    width: 80px;
+    height: 30px;
+}
+
+.wrap .message_wrap .sub_name .sub_username {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgb(243, 240, 33);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.wrap .message_wrap .sub_body {
+    width: 100%;
+}
+
+.wrap .message_wrap .sub_body .time {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    color: rgb(53, 54, 58);
+}
+
+/* =============== SUB MESSAGE SHOW ======================= */
+
+.interface,
+.interface1 {
+    position: absolute;
+    top: 35px;
+    left: 120px;
+    color: rgb(53, 54, 58);
+}
+
+.interface1 {
+    top: 30px;
+    left: 115px;
+}
+
+.wrap nav {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.wrap nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap nav ul li a {
+    color: #3e4b72;
+}
+
+/* =============== LOG OUT ======================= */
+
+.container .name .log_out {
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    right: 3px;
+}
+
+.container .name .log_out:hover {
+    color: hsla(360, 40%, 50%, 0.8);
+}
+
+/* =============== DELETE, EDIT, SIGN IN AND COMMENT AREA====================== */
+
+.delete,
+.edit,
+.toggle_message,
+.plz_sign_in {
+    color: #000;
+    cursor: pointer;
+}
+
+.delete:hover,
+.edit:hover,
+.toggle_message:hover {
+    color: hsla(360, 40%, 50%, 0.8);
+}
+
+.plz_sign_in:hover {
+    color: rgb(16, 24, 97);
+}
+
+.toggle_message {
+    position: absolute;
+    right: 30px;
+    bottom: 5px;
+}
+
+.plz_sign_in {
+    font-weight: 600;
+    font-size: 1.4em;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.submit_message_wrap a span {
+    position: absolute;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.submit_message_wrap a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+}
+
+.submit_message_wrap a:hover span:nth-child(1) {
+    width: 100%;
+}
+
+.submit_message_wrap a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 0;
+    background: #ffffff;
+}
+
+.submit_message_wrap a:hover span:nth-child(2) {
+    height: 100%;
+}
+
+.submit_message_wrap a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+}
+
+.submit_message_wrap a:hover span:nth-child(3) {
+    width: 100%;
+}
+
+.submit_message_wrap a span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 0;
+    background: #ffffff;
+}
+
+.submit_message_wrap a:hover span:nth-child(4) {
+    height: 100%;
+}
